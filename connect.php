@@ -5,8 +5,8 @@ $AlreadyMember = $_POST['amember'];
 $Comments = $_POST['comments'];
 $StreetName = $_POST['sname'];
 $Date = $_POST['date'];
-if (!empty($username)) {
-    if (!empty($password)) {
+if (!empty($BusinessName)) {
+    if (!empty($Date)) {
         $host = "sql4.freesqldatabase.com";
         $dbusername = "sql4497902";
         $dbpassword = "wBbtRDUBrp";
@@ -27,10 +27,10 @@ if (!empty($username)) {
             $conn->close();
         }
     } else {
-        echo "Password should not be empty";
+        echo "Business Name should not be empty";
         die();
     }
 } else {
-    echo "Username should not be empty";
+    echo "Date should not be empty";
     die();
 }
