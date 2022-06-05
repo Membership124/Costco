@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body>
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Business Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Street Name :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+    <td>Already Member? :</td>
+    <td>
+     <input type="radio" name="gender" value="y" required>Yes
+     <input type="radio" name="gender" value="n" required>No
+    </td>
+   </tr>
+   <tr>
+    <td>Comments :</td>
+    <td><input type="comments" name="Comments" required></td>
+   </tr> 
+   <tr>
+    <td>Date no :</td>
+    <td>
+        <div id="current_date"></p>
+            <script>
+            date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+            </script>
+        </div>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit" name="submit"></td>
+   </tr>
+  </table>
+ </form>
+</body>
+</html>
